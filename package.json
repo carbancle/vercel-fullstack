@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon ./api/index.ts",
-    "local-build": "cd client && npm run build && move dist ../dist",
-    "build": "cd client && npm ci && npm run build && mv dist ../dist",
+    "local-build": "cd client && npm run local-build",
+    "build": "cd client && npm ci && npm run build",
     "start": "node ./api/index.ts"
   },
   "keywords": [],
